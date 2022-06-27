@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+
+  <a href="/new">Click here to submit a message</a>
+
+  each message in messages
+    p #{message.user}
+    p #{message.text}
+    p #{message.added}
