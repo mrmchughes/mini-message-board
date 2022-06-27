@@ -24,8 +24,8 @@ router.get("/", function (req, res, next) {
 
 router.post("/new", (req, res, next) => {
   messages.push({
-    text: req.body.messageText,
     user: req.body.messageUser,
+    text: req.body.messageText,
     added: new Date(),
   });
   res.redirect("/");

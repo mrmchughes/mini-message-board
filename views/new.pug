@@ -5,12 +5,12 @@ block content
 
   form(method="POST" action="/new")    
     div.form-group
-        label(for="messageText") Message:  
-        input#name.form-control(type="text", placeholder="Message" name="messageText" value="")
+        label(for="messageUser") User Name: 
+        input#name.form-control(type="text", placeholder="User Name" name="messageUser" value="")
 
     div.form-group
-        label(for="messageUser") User Name: 
-        input#name.form-control(type="text", placeholder="User Name" name="messageName" value="")
+        label(for="messageText") Message:  
+        input#name.form-control(type="text", placeholder="Message" name="messageText" value="")
 
     button(type="submit") Submit
 
